@@ -5,9 +5,9 @@ from discord_webhooks import DiscordWebhooks
 import html5lib
 import time
 
-hook_url = 'https://discord.com/api/webhooks/783729970765103104/857S1msGYUjDq3RAWGN9AR8Jd-XjeduzNuR0ifLK4OOTaJlk9gXKutaold19QJM6ojRu'
+hook_url = 'YOU DISCORD WEBHOOOK URL'
 webhook = DiscordWebhooks(hook_url)
-headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36"}
+headers = {"YOUR USER AGENT: to get this just search on google "My User agent" and copy paste it }
 
 
 url = input("Enter Your Amazon Product Link : ")
@@ -29,9 +29,6 @@ while True:
         price = price.get_text()
         con_price = price[2:]
         print(con_price, len(con_price), type(con_price))
-        #for x in con_price:
-            #y = re.findall('\d+', con_price)
-            #i = ''.join(y)
         con_price_s = con_price.replace(',', '')
         dec = float(con_price_s)
         print(dec, type(dec))
